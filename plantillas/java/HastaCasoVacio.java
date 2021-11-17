@@ -1,5 +1,3 @@
-package plantilla;
-
 import java.util.Scanner;
 
 public class HastaCasoVacio {
@@ -15,7 +13,7 @@ public class HastaCasoVacio {
 		while (running) {
 			current = Integer.parseInt(sc.next());
 			
-			if (cases == END) {
+			if (current == END) {
 				running = false;
 			}
 		}

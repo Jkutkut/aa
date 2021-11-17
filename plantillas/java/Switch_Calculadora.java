@@ -35,19 +35,19 @@ public class Switch_Calculadora {
 		float result = Float.POSITIVE_INFINITY;
 		switch(op) {
 			case "+":
-				result = Calculadora.add(a, b);
+				result = add(a, b);
 				break;
 			case "-":
-				result = Calculadora.minus(a, b);
+				result = minus(a, b);
 				break;
 			case "*":
-				result = Calculadora.times(a, b);
+				result = times(a, b);
 				break;
 			case "/":
-				result = Calculadora.div(a, b);
+				result = div(a, b);
 				break;
 			case "^":
-				result = Calculadora.pow(a, b);
+				result = pow(a, b);
 				break;
 			default:
 				System.out.println("The operation is not valid!!");

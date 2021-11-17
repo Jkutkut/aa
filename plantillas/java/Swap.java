@@ -1,8 +1,5 @@
 class Swap {
-    public static void main(String[] args) {
-        int a, b;
-
-
+    public static void swap(int a, int b) {
         int swap = b;
         b = a;
         a = swap;

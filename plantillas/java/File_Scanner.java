@@ -1,10 +1,8 @@
-package plantilla;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class P {
+public class File_Scanner {
 	public static void main(String[] args) {
 //		Scanner sc = new Scanner(System.in);
 		File f = new File("src/dam/jorgeRe//p_/data.txt");

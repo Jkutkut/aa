@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ExamenTipo/src/dam/ejercicio1"/>
+	<classpathentry kind="src" path="ExamenTipo/src/dam/ejercicio2"/>
+	<classpathentry kind="src" path="ExamenTipo/src/dam/ejercicio3"/>
+	<classpathentry kind="src" path="ExamenTipo/src/dam/ejercicio4/main"/>
+	<classpathentry kind="src" path="ExamenTipo/src/dam/ejercicio4/pojo"/>
+	<classpathentry kind="src" path="plantillas/java"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

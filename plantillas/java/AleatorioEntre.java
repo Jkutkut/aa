@@ -5,6 +5,8 @@ class AleatorioEntre {
 
     public static void main(String[] args) {
         r = new Random();
+
+		aleatorioEntre(2, 6);
     }
 
     /**

@@ -1,5 +1,3 @@
-package plantilla;
-
 import java.util.Scanner;
 
 public class nCasos_plantilla {

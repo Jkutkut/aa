@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ComprobarPojo {
     private static Scanner sc;
 
@@ -14,3 +16,4 @@ public class ComprobarPojo {
 
         // return new ();
     }
+}

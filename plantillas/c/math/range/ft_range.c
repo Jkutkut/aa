@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jre-gonz <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jre-gonz <jre-gonz@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/15 13:10:30 by jre-gonz          #+#    #+#             */
-/*   Updated: 2021/12/15 15:11:54 by jre-gonz         ###   ########.fr       */
+/*   Created: 2022/01/18 12:35:42 by jre-gonz          #+#    #+#             */
+/*   Updated: 2022/01/18 12:35:44 by jre-gonz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 int	*ft_range(int min, int max)
 {

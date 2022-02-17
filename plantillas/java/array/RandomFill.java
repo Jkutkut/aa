@@ -1,5 +1,7 @@
 package array;
 
+import java.util.Random;
+
 public class RandomFill {
 	private static void randomFill(int[][] matriz, int maxVal) {
 		Random r = new Random();

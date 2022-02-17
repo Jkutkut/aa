@@ -1,4 +1,4 @@
-package dam.prog.parcialA.ej1;
+package examenArrays.src.dam.prog.parcialA.ej1;
 
 import java.util.Random;
 import java.util.Scanner;

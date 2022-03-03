@@ -104,4 +104,58 @@ public class SuperScannerMethods {
 		}
 		return n;
 	}
+
+	/**
+	 * @param question - Question to show using System.out.print
+	 * @return boolean given by Scanner
+	 */
+	public static boolean getBoolean(String question) {
+		String r;
+		while (true) {
+			System.out.print(question);
+			r = sc.nextLine();
+			if (r.matches("[Yy][Ee][Ss]|[Ss][Iií]"))
+				return true;
+			else if (r.matches("[Nn][Oo]"))
+				return false;
+			else
+				System.out.println("No entiendo. Sí o no?");
+		}
+	}
+
+	/**
+	 * @param question - Question to show using System.out.print
+	 * @return Double given by Scanner
+	 */
+	public static double getDouble(String question) {
+		while (true) {
+			try {
+				System.out.print(question);
+				return Double.parseDouble(sc.nextLine());
+			}
+			catch (NumberFormatException e) {
+				System.out.println("El valor no es un número decimal válido.\n");
+			}
+		}
+	}
+
+	/**
+	 * @param question - Question to show using System.out
+	 * @return Double greater or equal to 0
+	 */
+	public static double getNaturalDouble(String question) {
+		double n = 0d;
+		boolean isNotNatural = true;
+		while (isNotNatural) {
+			n = getDouble(question);
+			if (n >= 0d) {
+				isNotNatural = false;
+			}
+			else {
+				System.out.println("El número tiene que ser un natural -> [0, inf)\n");
+			}
+		}
+		return n;
+	}
+
 }

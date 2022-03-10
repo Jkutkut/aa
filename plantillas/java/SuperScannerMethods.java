@@ -10,6 +10,20 @@ public class SuperScannerMethods {
 	
 	// GETTERS
 	/**
+	 * Selector of a element from a array.
+	 * @param question Question to ask
+	 * @param arr Array to use
+	 * @return Element selected.
+	 */
+	public static Object getObjectIn(String question, Object[] arr) {
+		String q = question;
+		for (int i = 0; i < arr.length; i++) {
+			q += arr[i] + "\n";
+		}
+		return arr[getIntInRange(q, 1, arr.length) - 1];
+	}
+	
+	/**
 	 * @param question - Question to show using System.out
 	 * @param minLen - min length of String
 	 * @param maxLen - max length of String

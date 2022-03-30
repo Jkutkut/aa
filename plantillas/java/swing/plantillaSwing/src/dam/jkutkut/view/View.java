@@ -32,4 +32,9 @@ public class View extends JFrame {
 	public void setController(Controller controller) {
 		// TODO
 	}
+
+	// GETTERS
+
+
+	// SETTERS
 }

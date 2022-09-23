@@ -1,3 +1,5 @@
+package jkutkut;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -5,6 +7,7 @@ import java.io.InputStream;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.charset.Charset;
 import java.nio.file.Path;
+import java.util.IllegalFormatConversionException;
 import java.util.Scanner;
 
 
@@ -161,6 +164,53 @@ public class SuperScanner {
 				System.out.printf(
 					"El número tiene que ser un natural en el rango [%d, %d]\n\n",
 					min, max
+				);
+			}
+		}
+		return n;
+	}
+
+	/**
+	 * @param question - Question to show using System.out.print
+	 * @return Float given by Scanner
+	 */
+	public float getFloat(String question) {
+		while (true) {
+			try {
+				System.out.print(question);
+				return Float.parseFloat(sc.nextLine());
+			}
+			catch (NumberFormatException e) {
+				System.out.println("El valor no es un número float válido.\n");
+			}
+		}
+	}
+
+	/**
+	 * @param question - Question to show using System.out
+	 * @param min - min value of the desired int
+	 * @param max - max value of the desired int
+	 * @return Float inside the interval [min, max]
+	 */
+	public float getFloatInRange(String question, float min, float max) {
+		if (min > max) {
+			float swap = min;
+			min = max;
+			max = swap;
+		}
+
+		float n = 0;
+		boolean isNotValid = true;
+		while (isNotValid) {
+			n = getFloat(question);
+
+			if (n >= min && n <= max) {
+				isNotValid = false;
+			}
+			else {
+				System.out.printf(
+						"El número tiene que ser un float en el rango [%f, %f]\n\n",
+						min, max
 				);
 			}
 		}
